@@ -1,7 +1,7 @@
 export class FileContents {
 
-    private camelCase (input: string): string {
-        return input.replace( /-([a-z])/ig, function( all, letter ) {
+    private camelCase(input: string): string {
+        return input.replace(/-([a-z])/ig, function (all, letter) {
             return letter.toUpperCase();
         });
     }
@@ -15,7 +15,7 @@ export class FileContents {
             "\n" +
             "@Component({\n" +
             "\tselector: '" + inputName + "',\n" +
-            "\ttemplateUrl: './" + inputNam + "/" + inputName + ".component.html'\n" +
+            "\ttemplateUrl: './" + inputName + "/" + inputName + ".component.html'\n" +
             "})\n" +
             "\n" +
             "export class " + inputUpperCase + "Component implements OnInit {\n" +
@@ -47,26 +47,26 @@ export class FileContents {
         var specContent: string = "import { TestBed, inject } from '@angular/core/testing';\n\n" +
             "import { " + inputUpperCase + "Component } from './" + inputName + ".component';\n" +
             "\n" +
-            "describe('a "+ inputName +" component', () => {\n" +
-                "\tlet component: " + inputUpperCase + "Component;\n" +
-                "\n" +
-                "\t// register all needed dependencies\n" +
-                "\tbeforeEach(() => {\n" +
-                    "\t\tTestBed.configureTestingModule({\n" +
-                        "\t\t\tproviders: [\n" +
-                            "\t\t\t\t" + inputUpperCase + "Component\n" +
-                        "\t\t\t]\n" +
-                    "\t\t});\n" +
-               "\t});\n" +
-                "\n" +
-                "\t// instantiation through framework injection\n" +
-                "\tbeforeEach(inject([" + inputUpperCase + "Component], (" + inputUpperCase + "Component) => {\n" +
-                    "\t\tcomponent = " + inputUpperCase + "Component;\n" +
-                "\t}));\n" +
-                "\n" +
-                "\tit('should have an instance', () => {\n" +
-                    "\t\texpect(component).toBeDefined();\n" +
-                "\t});\n" +
+            "describe('a " + inputName + " component', () => {\n" +
+            "\tlet component: " + inputUpperCase + "Component;\n" +
+            "\n" +
+            "\t// register all needed dependencies\n" +
+            "\tbeforeEach(() => {\n" +
+            "\t\tTestBed.configureTestingModule({\n" +
+            "\t\t\tproviders: [\n" +
+            "\t\t\t\t" + inputUpperCase + "Component\n" +
+            "\t\t\t]\n" +
+            "\t\t});\n" +
+            "\t});\n" +
+            "\n" +
+            "\t// instantiation through framework injection\n" +
+            "\tbeforeEach(inject([" + inputUpperCase + "Component], (" + inputUpperCase + "Component) => {\n" +
+            "\t\tcomponent = " + inputUpperCase + "Component;\n" +
+            "\t}));\n" +
+            "\n" +
+            "\tit('should have an instance', () => {\n" +
+            "\t\texpect(component).toBeDefined();\n" +
+            "\t});\n" +
             "});";
         return specContent;
     }
