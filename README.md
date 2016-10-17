@@ -1,23 +1,14 @@
 ![](images/icon.png)
 
-# VS Code Angular2 Add Files
+# VS Code Angular Native Add Files
 
-This extension allows you to add **Angular2 typescript files including snippets** to your VS Code project.
+This extension allows you to add **Angular Native typescript files including snippets** to your VS Code project.
 
-> Inspired by [Dominik Kundel](https://github.com/dkundel)'s [Advanced New File - Visual Studio Code Extension](https://github.com/dkundel/vscode-new-file) and [John Papa](https://github.com/johnpapa)'s [Angular 2 TypeScript Snippets for VS Code](https://github.com/johnpapa/vscode-angular2-snippets).
+> Forked from[Sebastian Baar](https://github.com/sebastianbaar/vscode-add-angular2-files) VS Code Add Angular2 Files
 
 ## Changelog
 
-### 1.0.0
-**Now Updated for Angular 2.0.0 release** 
-
-### 0.2.1
-* **icon** add an icon 
-
-### 0.2.0
-
-* **@angular** update to Angular2 rc.6
-* **tests** add tests (.spec-files)
+## 0.0.1
 
 ## Features
 
@@ -65,11 +56,7 @@ home/shared/home.ts
 **Important:** This extension due to the nature of it's purpose will create
 files on your hard drive and if necessary create the respective folder structure.
 While it should not override any files during this process, I'm not giving any guarantees
-or take any responsibility in case of lost data. 
-
-# Contributors
-
-[Sebastian Baar](https://github.com/sebastianbaar)
+or take any responsibility in case of lost data.
 
 # License
 

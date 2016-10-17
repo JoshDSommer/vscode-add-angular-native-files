@@ -1,22 +1,22 @@
 {
-    "name": "vscode-add-angular2-files",
-    "displayName": "Add Angular2 Files",
-    "description": "Add Angular2 files including ng2 snippets to your Visual Studio Code project",
-    "version": "1.0.0",
+    "name": "vscode-add-angular-native-files",
+    "displayName": "Add Angular Native Files",
+    "description": "Add  Angular Native  files including ng2 snippets to your Visual Studio Code project",
+    "version": "0.0.1",
     "icon": "images/icon.png",
-    "publisher": "sebastianbaar",
+    "publisher": "joshdsommer",
     "author": {
-        "name": "Sebastian Baar"
+        "name": "Josh Sommer"
     },
     "engines": {
         "vscode": "^1.4.0"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/sebastianbaar/vscode-add-angular2-files"
+        "url": "https://github.com/TheOriginalJosh/vscode-add-angular-native-files"
     },
     "bugs": {
-        "url": "https://github.com/sebastianbaar/vscode-add-angular2-files/issues"
+        "url": "https://github.com/TheOriginalJosh/vscode-add-angular-native-files/issues"
     },
     "categories": [
         "Other",
@@ -35,24 +35,24 @@
     "contributes": {
         "commands": [
             {
-                "command": "extension.addAngular2Files",
-                "title": "Add Angular2 Files"
+                "command": "extension.addAngularNativeFiles",
+                "title": "Add Angular Native Files"
             },
             {
-                "command": "extension.addAngular2FilesExtended",
-                "title": "Add Angular2 Files (Extended)"
+                "command": "extension.addAngularNativeFilesExtended",
+                "title": "Add Angular Native Files (Extended)"
             }
         ],
         "menus": {
             "explorer/context": [
                 {
                     "when": "",
-                    "command": "extension.addAngular2Files",
+                    "command": "extension.addAngularNativeFiles",
                     "group": "Add Files"
                 },
                 {
                     "when": "",
-                    "command": "extension.addAngular2FilesExtended",
+                    "command": "extension.addAngularNativeFilesExtended",
                     "group": "Add Files"
                 }
             ]

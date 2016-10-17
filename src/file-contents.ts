@@ -7,15 +7,15 @@ export class FileContents {
     }
 
     public componentContent(inputName: string): string {
-        var inputUpperCase: string;       
+        var inputUpperCase: string;
         inputUpperCase = inputName.charAt(0).toUpperCase() + inputName.slice(1);
         inputUpperCase = this.camelCase(inputUpperCase);
-        
+
         var componentContent: string = "import { Component, OnInit } from '@angular/core';\n" +
             "\n" +
             "@Component({\n" +
             "\tselector: '" + inputName + "',\n" +
-            "\ttemplateUrl: '" + inputName + ".component.html'\n" +
+            "\ttemplateUrl: './" + inputNam + "/" + inputName + ".component.html'\n" +
             "})\n" +
             "\n" +
             "export class " + inputUpperCase + "Component implements OnInit {\n" +
@@ -26,10 +26,10 @@ export class FileContents {
     }
 
     public templateContent(inputName: string): string {
-        var inputUpperCase: string; 
+        var inputUpperCase: string;
         inputUpperCase = inputName.charAt(0).toUpperCase() + inputName.slice(1);
         inputUpperCase = this.camelCase(inputUpperCase);
-        var templateContent: string = `<div class="${inputName}"> Hello ${inputUpperCase}Component! </div>`;
+        var templateContent: string = `<Label class="${inputName}" text="Hello ${inputUpperCase}Component!"></Label>`;
         return templateContent;
     }
 
@@ -40,10 +40,10 @@ export class FileContents {
     }
 
     public specContent(inputName: string): string {
-        var inputUpperCase: string;       
+        var inputUpperCase: string;
         inputUpperCase = inputName.charAt(0).toUpperCase() + inputName.slice(1);
         inputUpperCase = this.camelCase(inputUpperCase);
-        
+
         var specContent: string = "import { TestBed, inject } from '@angular/core/testing';\n\n" +
             "import { " + inputUpperCase + "Component } from './" + inputName + ".component';\n" +
             "\n" +
