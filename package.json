@@ -1,8 +1,8 @@
 {
     "name": "vscode-add-angular-native-files",
     "displayName": "Add Angular Native Files",
-    "description": "Add  Angular Native  files including ng2 snippets to your Visual Studio Code project",
-    "version": "0.0.1",
+    "description": "Add  Angular Native (NativeScript + Angular 2)  files including ng2 snippets to your Visual Studio Code project",
+    "version": "0.0.4",
     "icon": "images/icon.png",
     "publisher": "joshdsommer",
     "author": {
@@ -26,7 +26,8 @@
     "scripts": {
         "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
         "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install"
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "publish": "npm run vscode:prepublish &&  vsce publish"
     },
     "activationEvents": [
         "*"

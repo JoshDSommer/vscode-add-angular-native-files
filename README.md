@@ -2,13 +2,13 @@
 
 # VS Code Angular Native Add Files
 
-This extension allows you to add **Angular Native typescript files including snippets** to your VS Code project.
+This extension allows you to add **Angular Native (NativeScript + Angular 2) typescript files including snippets** to your VS Code project.
 
 > Forked from[Sebastian Baar](https://github.com/sebastianbaar/vscode-add-angular2-files) VS Code Add Angular2 Files
 
 ## Changelog
 
-## 0.0.1
+## 0.0.4
 
 ## Features
 

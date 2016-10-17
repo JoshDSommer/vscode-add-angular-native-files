@@ -15,10 +15,13 @@ export class FileContents {
             "\n" +
             "@Component({\n" +
             "\tselector: '" + inputName + "',\n" +
-            "\ttemplateUrl: './" + inputName + "/" + inputName + ".component.html'\n" +
+            "\ttemplateUrl: './" + inputName + "/" + inputName + ".component.html',\n" +
+            "\tstyleUrls: ['./" + inputName + "/" + inputName + ".component.css']\n" +
             "})\n" +
             "\n" +
             "export class " + inputUpperCase + "Component implements OnInit {\n" +
+            "\n" +
+            "\tconstructor() { }\n" +
             "\n" +
             "\tngOnInit() { }\n" +
             "}";
