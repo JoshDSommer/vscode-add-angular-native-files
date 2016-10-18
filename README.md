@@ -8,7 +8,7 @@ This extension allows you to add **Angular Native (NativeScript + Angular 2) typ
 
 ## Changelog
 
-## 0.0.4
+## 0.0.5
 
 ## Features
 
