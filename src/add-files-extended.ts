@@ -35,6 +35,10 @@ export class AddFilesExtended extends AddFiles {
     // create an IFiles array including file names and contents
     var files: IFiles[] = [
       {
+        name: path.join(folderName, `index.ts`),
+        content: fc.createBarrel(inputName)
+      },
+      {
         name: path.join(folderName, `${inputName}.component.ts`),
         content: fc.componentContent(inputName)
       },

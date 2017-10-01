@@ -1,5 +1,16 @@
 export class FileContentsExtended {
 
+    public createBarrel(inputName: string): string {
+        var inputUpperCase: string;
+        inputUpperCase = inputName.charAt(0).toUpperCase() + inputName.slice(1);
+        inputUpperCase = this.camelCase(inputUpperCase);
+
+        return (`export { ${inputUpperCase} } from './shared/${inputName}.model';
+        export { ${inputUpperCase}Service } from './shared/${inputName}.service';
+        export { ${inputUpperCase}Component } from './${inputName}.component';
+        `);
+    }
+
     private camelCase (input: string): string {
         return input.replace( /-([a-z])/ig, function( all, letter ) {
             return letter.toUpperCase();
