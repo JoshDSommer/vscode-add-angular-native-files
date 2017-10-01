@@ -1,5 +1,3 @@
-![](images/icon.png)
-
 # VS Code Angular Native Add Files
 
 This extension allows you to add **Angular Native (NativeScript + Angular 2) typescript files including snippets** to your VS Code project.
@@ -18,6 +16,7 @@ Right click on a file or a folder in your current project. There are two options
 
 This command adds the following files to your new folder (let's assume you typed in `home`):
 ```
+home/index.ts
 home/home.component.ts
 home/home.component.html
 home/home.component.css
@@ -30,6 +29,7 @@ home/home.component.spec.ts
 
 This command adds the following extended files to your new folder (let's assume you typed in `home`):
 ```
+home/index.ts
 home/home.component.ts
 home/home.component.html
 home/home.component.css
