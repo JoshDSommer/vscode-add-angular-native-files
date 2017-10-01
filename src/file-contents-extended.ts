@@ -16,6 +16,7 @@ export class FileContentsExtended {
             "import { " + inputUpperCase + "Service } from './shared/" + inputName + ".service';\n" +
             "\n" +
             "@Component({\n" +
+            "\tmoduleId: module.id,\n" +
             "\tselector: '" + inputName + "',\n" +
             "\ttemplateUrl: '" + inputName + ".component.html',\n" +
             "\tproviders: [" + inputUpperCase + "Service]\n" +

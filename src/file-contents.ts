@@ -14,6 +14,7 @@ export class FileContents {
         var componentContent: string = "import { Component, OnInit } from '@angular/core';\n" +
             "\n" +
             "@Component({\n" +
+            "\tmoduleId: module.id,\n" +
             "\tselector: '" + inputName + "',\n" +
             "\ttemplateUrl: './" + inputName + ".component.html',\n" +
             "\tstyleUrls: ['./" + inputName + ".component.css']\n" +
