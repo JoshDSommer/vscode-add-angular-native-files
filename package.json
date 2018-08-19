@@ -1,70 +1,70 @@
 {
-    "name": "vscode-add-angular-native-files",
-    "displayName": "Add Angular Native Files",
-    "description": "Add  Angular Native (NativeScript + Angular 2)  files including ng2 snippets to your Visual Studio Code project",
-    "version": "0.0.5",
-    "icon": "images/icon.png",
-    "publisher": "joshdsommer",
-    "author": {
-        "name": "Josh Sommer"
-    },
-    "engines": {
-        "vscode": "^1.4.0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/TheOriginalJosh/vscode-add-angular-native-files"
-    },
-    "bugs": {
-        "url": "https://github.com/TheOriginalJosh/vscode-add-angular-native-files/issues"
-    },
-    "categories": [
-        "Other",
-        "Languages",
-        "Snippets"
+  "name": "vscode-add-angular-native-files",
+  "displayName": "Add Angular Native Files",
+  "description": "Add  Angular Native (NativeScript + Angular 2)  files including ng2 snippets to your Visual Studio Code project",
+  "version": "0.0.10",
+  "icon": "images/icon.png",
+  "publisher": "joshdsommer",
+  "author": {
+    "name": "Josh Sommer"
+  },
+  "engines": {
+    "vscode": "^1.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheOriginalJosh/vscode-add-angular-native-files"
+  },
+  "bugs": {
+    "url": "https://github.com/TheOriginalJosh/vscode-add-angular-native-files/issues"
+  },
+  "categories": [
+    "Other",
+    "Languages",
+    "Snippets"
+  ],
+  "scripts": {
+    "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+    "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "publish": "npm run vscode:prepublish &&  vsce publish"
+  },
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/src/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.addAngularNativeFiles",
+        "title": "Add Angular Native Files"
+      },
+      {
+        "command": "extension.addAngularNativeFilesExtended",
+        "title": "Add Angular Native Files (Extended)"
+      }
     ],
-    "scripts": {
-        "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
-        "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "publish": "npm run vscode:prepublish &&  vsce publish"
-    },
-    "activationEvents": [
-        "*"
-    ],
-    "main": "./out/src/extension",
-    "contributes": {
-        "commands": [
-            {
-                "command": "extension.addAngularNativeFiles",
-                "title": "Add Angular Native Files"
-            },
-            {
-                "command": "extension.addAngularNativeFilesExtended",
-                "title": "Add Angular Native Files (Extended)"
-            }
-        ],
-        "menus": {
-            "explorer/context": [
-                {
-                    "when": "",
-                    "command": "extension.addAngularNativeFiles",
-                    "group": "Add Files"
-                },
-                {
-                    "when": "",
-                    "command": "extension.addAngularNativeFilesExtended",
-                    "group": "Add Files"
-                }
-            ]
+    "menus": {
+      "explorer/context": [
+        {
+          "when": "",
+          "command": "extension.addAngularNativeFiles",
+          "group": "Add Files"
+        },
+        {
+          "when": "",
+          "command": "extension.addAngularNativeFilesExtended",
+          "group": "Add Files"
         }
-    },
-    "devDependencies": {
-        "typescript": "^1.8.5",
-        "rimraf": "^2.4.4",
-        "vscode": "^0.11.0"
-    },
-    "dependencies": {
-        "q": "^1.4.1"
+      ]
     }
+  },
+  "devDependencies": {
+    "typescript": "^1.8.5",
+    "rimraf": "^2.4.4",
+    "vscode": "^0.11.0"
+  },
+  "dependencies": {
+    "q": "^1.4.1"
+  }
 }
