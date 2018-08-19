@@ -2,7 +2,7 @@
   "name": "vscode-add-angular-native-files",
   "displayName": "Add Angular Native Files",
   "description": "Add  Angular Native (NativeScript + Angular 2)  files including ng2 snippets to your Visual Studio Code project",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "icon": "images/icon.png",
   "publisher": "joshdsommer",
   "author": {

@@ -8,7 +8,7 @@ This extension allows you to add **Angular Native (NativeScript + Angular 2) typ
 
 ## Changelog
 
-## 0.0.10
+## 0.0.11
 
     added module id to generated component output
 
