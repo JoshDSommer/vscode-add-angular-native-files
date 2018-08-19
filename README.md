@@ -8,6 +8,10 @@ This extension allows you to add **Angular Native (NativeScript + Angular 2) typ
 
 ## Changelog
 
+## 0.0.10
+
+    added module id to generated component output
+
 ## 0.0.5
 
 ## Features
@@ -17,6 +21,7 @@ Right click on a file or a folder in your current project. There are two options
 ### Add Angular2 Files
 
 This command adds the following files to your new folder (let's assume you typed in `home`):
+
 ```
 home/home.component.ts
 home/home.component.html
@@ -24,11 +29,12 @@ home/home.component.css
 home/home.component.spec.ts
 ```
 
-![alt text](https://cloud.githubusercontent.com/assets/7135276/16797373/83bd9ffc-48e7-11e6-9ac0-9874a4387a3a.gif "Add Angular2 Files")
+![alt text](https://cloud.githubusercontent.com/assets/7135276/16797373/83bd9ffc-48e7-11e6-9ac0-9874a4387a3a.gif 'Add Angular2 Files')
 
 ### Add Angular2 Files (Extended)
 
 This command adds the following extended files to your new folder (let's assume you typed in `home`):
+
 ```
 home/home.component.ts
 home/home.component.html
@@ -38,7 +44,7 @@ home/shared/home.service.ts
 home/shared/home.ts
 ```
 
-![alt text](https://cloud.githubusercontent.com/assets/7135276/16797375/861bd246-48e7-11e6-8cc8-2fc688197388.gif "Add Angular2 Files (Extended)")
+![alt text](https://cloud.githubusercontent.com/assets/7135276/16797375/861bd246-48e7-11e6-8cc8-2fc688197388.gif 'Add Angular2 Files (Extended)')
 
 **The naming of the files as well as the (boilerplate) snippets are based on the [official Angular2 Style Guide](https://angular.io/docs/ts/latest/guide/style-guide.html)**
 
