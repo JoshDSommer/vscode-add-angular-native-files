@@ -24,8 +24,8 @@ export class FileContentsExtended {
       ".service';\n" +
       '\n' +
       '@Component({\n' +
-      '\tmoduleId: module.id,\n';
-    "\tselector: '" +
+      '\tmoduleId: module.id,\n' +
+      "\tselector: '" +
       inputName +
       "',\n" +
       "\ttemplateUrl: '" +
